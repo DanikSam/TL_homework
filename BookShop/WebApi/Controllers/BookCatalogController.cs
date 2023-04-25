@@ -21,7 +21,6 @@ public class BookCatalogController: ControllerBase
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {
-
         var bookCatalog = _bookCatalog.Find(t => t.Id == id);
 
         var result = new
